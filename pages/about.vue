@@ -57,7 +57,6 @@ export default {
   nuxtI18n: {
     paths: {
       'fr-fr': '/qui-sommes-nous',
-      'fr-be': '/qui-sommes-nous',
       'en-gb': '/about'
     }
   },
@@ -103,7 +102,7 @@ export default {
 
     @include device-is('tablet') {
       padding: 200px 0 100px;
-      height: 520px;
+      height: 540px;
       padding-top: 160px;
     }
   }

@@ -87,7 +87,6 @@ export default {
   nuxtI18n: {
     paths: {
       'fr-fr': '/employeurs',
-      'fr-be': '/employeurs',
       'en-gb': '/employers'
     }
   },
@@ -141,7 +140,7 @@ export default {
 
     @include device-is('tablet') {
       padding: 200px 0 100px;
-      height: 520px;
+      height: 540px;
       padding-top: 160px;
     }
   }
