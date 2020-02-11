@@ -65,8 +65,11 @@
       color: $blue-1;
     }
 
-    .container {
+    > .container {
       height: 90px;
+    }
+
+    .container {
       display: flex;
       align-items: center;
     }
@@ -89,7 +92,7 @@
       align-items: center;
 
       .text-black {
-        margin-right: 38px;
+        margin-right: 24px;
 
         &:last-child {
           margin-right: 0;

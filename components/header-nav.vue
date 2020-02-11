@@ -9,7 +9,7 @@
       <div class="nav-principal mobile">
         <div class="container padding-container">
           <div class="switch">
-            <nuxt-link to="/">
+            <nuxt-link to="https://pix.fr">
               <img
                 alt="Accueil du site pix.fr"
                 class="logo"
@@ -21,7 +21,6 @@
         </div>
       </div>
       <div id="page-wrap">
-        <organization-nav :organization-nav-items="organizationNavItems" />
         <div class="nav-principal desktop">
           <div class="container padding-container">
             <nuxt-link to="/">
@@ -36,6 +35,7 @@
               <main-nav :main-nav-items="mainNavItems" />
             </div>
           </div>
+          <organization-nav :organization-nav-items="organizationNavItems" />
         </div>
       </div>
     </header>
