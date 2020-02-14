@@ -16,7 +16,6 @@
                 src="/images/pix-logo.svg"
               />
             </nuxt-link>
-            <img alt="Logo de la Marianne" src="/images/marianne-logo.svg" />
           </div>
         </div>
       </div>
@@ -30,7 +29,6 @@
                 src="/images/pix-logo.svg"
               />
             </nuxt-link>
-            <img alt="Logo de la Marianne" src="/images/marianne-logo.svg" />
             <div class="desktop">
               <main-nav :main-nav-items="mainNavItems" />
             </div>
