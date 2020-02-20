@@ -1,33 +1,55 @@
 .nav {
   .nav-switch {
     display: none;
-    height: 30px;
-    background-color: $grey-3;
+    height: 68px;
+    background-color: $grey-8;
 
     @include device-is('tablet') {
       display: flex;
     }
 
+    .logo-pro {
+      height: 38px;
+      width: auto;
+      margin-right: 32px;
+    }
+
     .container {
-      height: 30px;
+      height: 100%;
       display: flex;
       align-items: center;
       flex-flow: row;
-      justify-content: flex-end;
+      justify-content: center;
       width: 1140px;
 
       span,
       a {
-        font-size: 12px;
+        font-size: 14px;
       }
 
       a {
-        margin-left: 3px;
-        color: $grey-1 !important;
-        margin-right: 18px;
+        color: $blue-5;
+        margin-right: 24px;
+        padding: 8px 16px;
+        font-family: $roboto;
 
         &:hover {
-          color: $blue-1 !important;
+          color: $blue-1;
+        }
+
+        &.nuxt-link-active {
+          color: $blue-6;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $white;
+          border-radius: 40px;
+          font-weight: 500;
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px -4px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.11);
+
+          &:hover {
+            color: $blue-1;
+          }
         }
       }
 
@@ -59,14 +81,19 @@
   }
 
   .nav-principal {
+    position: relative;
     background-color: $white;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
 
     a:hover {
       color: $blue-1;
     }
 
-    .container {
+    > .container {
       height: 90px;
+    }
+
+    .container {
       display: flex;
       align-items: center;
     }
@@ -89,7 +116,7 @@
       align-items: center;
 
       .text-black {
-        margin-right: 38px;
+        margin-right: 24px;
 
         &:last-child {
           margin-right: 0;

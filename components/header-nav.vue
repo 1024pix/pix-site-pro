@@ -3,25 +3,27 @@
     <header>
       <client-only>
         <push-menu :width="'230'">
-          <burger-menu-nav :top-items="topItems" :bottom-items="bottomItems" />
+          <burger-menu-nav
+            :top-items="topItems"
+            :bottom-items="bottomItems"
+            :middle-items="middleItems"
+          />
         </push-menu>
       </client-only>
       <div class="nav-principal mobile">
         <div class="container padding-container">
           <div class="switch">
-            <nuxt-link to="/">
+            <nuxt-link to="https://pix.fr">
               <img
                 alt="Accueil du site pix.fr"
                 class="logo"
                 src="/images/pix-logo.svg"
               />
             </nuxt-link>
-            <img alt="Logo de la Marianne" src="/images/marianne-logo.svg" />
           </div>
         </div>
       </div>
       <div id="page-wrap">
-        <organization-nav :organization-nav-items="organizationNavItems" />
         <div class="nav-principal desktop">
           <div class="container padding-container">
             <nuxt-link to="/">
@@ -31,12 +33,12 @@
                 src="/images/pix-logo.svg"
               />
             </nuxt-link>
-            <img alt="Logo de la Marianne" src="/images/marianne-logo.svg" />
             <div class="desktop">
               <main-nav :main-nav-items="mainNavItems" />
             </div>
           </div>
         </div>
+        <organization-nav :organization-nav-items="organizationNavItems" />
       </div>
     </header>
   </div>
@@ -59,7 +61,8 @@ export default {
     'organizationNavItems',
     'mainNavItems',
     'topItems',
-    'bottomItems'
+    'bottomItems',
+    'middleItems'
   ])
 }
 </script>

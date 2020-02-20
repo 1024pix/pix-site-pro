@@ -5,6 +5,7 @@ export const state = () => ({
   mainNavItems: [],
   topItems: [],
   bottomItems: [],
+  middleItems: [],
   resourcesNavItems: [],
   aboutNavItems: [],
   hotNews: null
@@ -24,10 +25,14 @@ export const mutations = {
       return response.data.body.filter((body) => body.primary.type === type)
     }
 
-    state.organizationNavItems = navItems(navigations, 'organizations-nav')
+    state.organizationNavItems = navItems(
+      navigations,
+      'pix-pro-organizations-nav'
+    )
     state.mainNavItems = navItems(navigations, 'main-nav')
     state.topItems = navItems(navigations, 'burger-menu-top')
-    state.bottomItems = navItems(navigations, 'burger-menu-bottom')
+    state.bottomItems = navItems(navigations, 'pix-pro-burger-menu-bottom')
+    state.middleItems = navItems(navigations, 'pix-pro-burger-menu-middle')
     state.resourcesNavItems = navItems(navigations, 'ressources-nav')
     state.aboutNavItems = navItems(navigations, 'about-nav')
   },

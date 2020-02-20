@@ -2,17 +2,9 @@
   <footer>
     <div class="container padding-container">
       <div class="sitelogo">
-        <a href="/"
+        <a href="https://pix.fr"
           ><img class="mb-2 logo" alt="pix" src="/images/pix-logo.svg"
         /></a>
-        <div>
-          <img
-            style="margin-left: -4px;"
-            class="ministere"
-            alt="ministere de l education"
-            src="/images/ministere-logo-2.svg"
-          />
-        </div>
       </div>
       <div class="sitenav">
         <div class="column">
