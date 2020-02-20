@@ -8,6 +8,21 @@
           </pix-link>
         </li>
       </ul>
+      <div class="nav-middle">
+        <hr class="nav-middle__bar" />
+        <h3>Pix Pro</h3>
+        <ul>
+          <li
+            v-for="item in middleItems"
+            :key="item.id"
+            class="nav-middle__link"
+          >
+            <pix-link :field="item.primary.link">
+              {{ $prismic.richTextAsPlain(item.primary.title) }}
+            </pix-link>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="nav-bottom">
       <hr class="nav-bottom__bar" />
@@ -28,6 +43,10 @@ export default {
   name: 'BurgerMenuNav',
   props: {
     topItems: {
+      type: Array,
+      default: null
+    },
+    middleItems: {
       type: Array,
       default: null
     },
@@ -83,6 +102,57 @@ export default {
     }
   }
 
+  hr {
+    height: 1px;
+    opacity: 0.5;
+    border: 1px solid $grey-7;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    display: inline-block;
+  }
+
+  .nav-middle {
+    font-family: $roboto;
+
+    h3 {
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 17.5px;
+    }
+
+    hr {
+      width: 16px;
+    }
+
+    ul {
+      margin-left: 24px;
+    }
+
+    &__link {
+      position: relative;
+      margin-bottom: 14px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .nuxt-link-active {
+      font-weight: 700;
+    }
+
+    .nuxt-link-active:before {
+      position: absolute;
+      left: -48px;
+      content: ' ';
+      height: 100%;
+      width: 2px;
+      background-color: $white;
+    }
+  }
+
   .nav-bottom {
     position: absolute;
     bottom: 40px;
@@ -91,7 +161,6 @@ export default {
       font-weight: 400;
       color: $white;
       text-align: left;
-      text-transform: uppercase;
       margin-top: 10px;
     }
 
@@ -106,13 +175,6 @@ export default {
 
     hr {
       width: 180px;
-      height: 1px;
-      opacity: 0.5;
-      border: 1px solid #dddddd;
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      border-radius: 0px;
-      display: inline-block;
     }
 
     a {
@@ -146,6 +208,7 @@ export default {
 }
 
 .bm-burger-button {
+  z-index: 1;
   @include device-is('tablet') {
     display: none;
   }

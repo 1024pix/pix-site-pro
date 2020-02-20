@@ -3,7 +3,11 @@
     <header>
       <client-only>
         <push-menu :width="'230'">
-          <burger-menu-nav :top-items="topItems" :bottom-items="bottomItems" />
+          <burger-menu-nav
+            :top-items="topItems"
+            :bottom-items="bottomItems"
+            :middle-items="middleItems"
+          />
         </push-menu>
       </client-only>
       <div class="nav-principal mobile">
@@ -33,8 +37,8 @@
               <main-nav :main-nav-items="mainNavItems" />
             </div>
           </div>
-          <organization-nav :organization-nav-items="organizationNavItems" />
         </div>
+        <organization-nav :organization-nav-items="organizationNavItems" />
       </div>
     </header>
   </div>
@@ -57,7 +61,8 @@ export default {
     'organizationNavItems',
     'mainNavItems',
     'topItems',
-    'bottomItems'
+    'bottomItems',
+    'middleItems'
   ])
 }
 </script>
