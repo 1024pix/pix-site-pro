@@ -63,7 +63,7 @@ export default {
   background: linear-gradient(134.72deg, $blue-2 0%, $blue-1 100%);
   padding-top: 0;
 
-  @include device-is('tablet') {
+  @include device-is('desktop') {
     display: none;
   }
 
@@ -209,7 +209,7 @@ export default {
 
 .bm-burger-button {
   z-index: 1;
-  @include device-is('tablet') {
+  @include device-is('desktop') {
     display: none;
   }
 }
