@@ -4,7 +4,7 @@
     height: 68px;
     background-color: $grey-8;
 
-    @include device-is('tablet') {
+    @include device-is('desktop') {
       display: flex;
     }
 
@@ -90,7 +90,7 @@
     }
 
     > .container {
-      height: 90px;
+      height: 52px;
     }
 
     .container {
@@ -99,8 +99,7 @@
     }
 
     .logo {
-      width: 82px;
-      height: 62px;
+      height: 43px;
       margin-right: 18px;
 
       @include device-is('tablet') {
@@ -113,10 +112,14 @@
       flex-flow: row;
       justify-content: flex-end;
       width: 100%;
-      align-items: center;
+      height: 100%;
 
       .text-black {
+        display: flex;
+        align-items: center;
+        height: 100%;
         margin-right: 24px;
+        font-family: $roboto;
 
         &:last-child {
           margin-right: 0;
@@ -126,6 +129,14 @@
 
     .desktop {
       width: 100%;
+      height: 100%;
     }
+
+    &.mobile {
+      > .container {
+        height: 87px;
+      }
+    }
+
   }
 }

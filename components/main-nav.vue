@@ -1,17 +1,21 @@
 <template>
   <div class="navigation">
-    <a href="https://pix.fr" class="text text-xs text-left regular text-black">
-      <p>
-        Accueil
-      </p>
-    </a>
     <pix-link
-      v-for="item in navItems"
+      v-for="(item, index) in mainNavItems"
       :key="item.id"
       :field="item.primary.link"
-      class="text text-xs text-left regular text-black"
+      :class="[
+        'text',
+        'text-xs',
+        'text-left',
+        'regular',
+        { 'text-black': index < mainNavItems.length - 1 },
+        { 'link-separator-left': index === mainNavItems.length - 3 },
+        { 'link-active': isPixProActive(index) },
+        { 'btn-nav': index === mainNavItems.length - 1 }
+      ]"
     >
-      <prismic-rich-text :field="item.primary.title" />
+      {{ $prismic.richTextAsPlain(item.primary.title) }}
     </pix-link>
   </div>
 </template>
@@ -25,12 +29,11 @@ export default {
       default: null
     }
   },
-  computed: {
-    navItems() {
-      return this.mainNavItems.filter((navItem) => {
-        const [{ text }] = navItem.primary.title
-        return text !== 'Accueil'
-      })
+  methods: {
+    isPixProActive(index) {
+      return ['/employeurs', '/mediation-numerique'].includes(
+        this.$nuxt.$route.path
+      )
     }
   }
 }

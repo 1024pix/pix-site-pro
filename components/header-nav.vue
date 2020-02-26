@@ -10,10 +10,10 @@
           />
         </push-menu>
       </client-only>
-      <div class="nav-principal mobile">
+      <div class="nav-principal tablet">
         <div class="container padding-container">
           <div class="switch">
-            <nuxt-link to="https://pix.fr">
+            <nuxt-link to="/">
               <img
                 alt="Accueil du site pix.fr"
                 class="logo"
