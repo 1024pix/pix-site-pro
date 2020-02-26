@@ -1,3 +1,24 @@
 .btn-nav {
+  align-self: center;
   transition: all ease-in .2s;
+}
+
+.link-separator-left {
+  position: relative;
+  margin-left: 24px;
+  padding: 0 12px;
+}
+
+.link-separator-left::before {
+  position: absolute;
+  left: -24px;
+  content: ' ';
+  height: 30px;
+  border-left: 1px solid $grey-9;
+}
+
+.link-separator-left.link-active {
+  color: $blue-6;
+  font-weight: 700;
+  border-bottom: 3px solid $blue-6;
 }
