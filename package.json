@@ -1,6 +1,6 @@
 {
   "name": "pix-site",
-  "version": "2.8.0",
+  "version": "0.9.0",
   "private": false,
   "description": "Site vitrine de Pix, service public en ligne d’évaluation et de certification des compétences numériques pour tous, tout au long de la vie.",
   "repository": {
@@ -23,9 +23,7 @@
     "release": "npm run release:minor",
     "release:patch": "npm version patch -m \"Release v%s\"",
     "release:minor": "npm version minor -m \"Release v%s\"",
-    "release:major": "npm version major -m \"Release v%s\"",
-    "preversion": "git checkout dev && git pull --rebase && npm test",
-    "postversion": "git push && git checkout master && git pull && git fetch -t && git merge dev --no-edit && git push origin master && git push --tags && git checkout dev"
+    "release:major": "npm version major -m \"Release v%s\""
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
