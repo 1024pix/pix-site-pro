@@ -2,6 +2,8 @@ export default function(req, res, next) {
   const shouldRedirect = ![
     '/mediation-numerique',
     '/employeurs',
+    '/continuite-pedagogique-of',
+    '/cadre-juridique-continuite-pedagogique',
     '/_loading/sse'
   ].includes(req.url)
   if (req.url === '/') {

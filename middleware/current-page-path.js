@@ -1,6 +1,6 @@
 export default function(context) {
   const { req, route, redirect } = context
-  const shouldRedirect = !['/mediation-numerique', '/employeurs'].includes(
+  const shouldRedirect = !['/mediation-numerique', '/employeurs', '/continuite-pedagogique-of', '/cadre-juridique-continuite-pedagogique'].includes(
     route.path
   )
   if (shouldRedirect) {
