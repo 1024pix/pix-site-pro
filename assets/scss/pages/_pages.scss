@@ -37,15 +37,37 @@
   padding-bottom: 40px;
 
   .page-section {
-    padding: 20px;
+    padding: 0 20px;
 
     &__description {
+
       h2 {
         font-weight: 400;
+        margin-top: 0;
       }
 
       ul {
         list-style: none;
+      }
+
+      .call-to-action {
+        text-align: center;
+        margin: 40px;
+
+        a {
+          font-family: 'Roboto', Arial, sans-serif;
+          display: inline-block;
+          font-size: 13px;
+          letter-spacing: 1px;
+          text-decoration: none;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 25px;
+          background-color: #3D68FF;
+          color: white;
+          border-radius: 20px;
+          border: 1px solid #3D68FF;
+          text-transform: uppercase;        }
       }
     }
   }
