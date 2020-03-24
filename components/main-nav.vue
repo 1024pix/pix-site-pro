@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     isPixProActive(index) {
-      return ['/employeurs', '/mediation-numerique'].includes(
+      return ['/employeurs', '/mediation-numerique', 'continuite-pedagogique-of'].includes(
         this.$nuxt.$route.path
       )
     }
