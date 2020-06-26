@@ -7,6 +7,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'fr'
+    },
     title: 'Pix - Cultivez vos compétences numériques',
     meta: [
       { charset: 'utf-8' },
