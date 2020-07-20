@@ -45,7 +45,7 @@ export default {
         currentPagePath,
         meta: document.data.meta,
         document: document.data.body,
-        documentId: document.id
+        documentId: document.id,
       }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
@@ -54,9 +54,9 @@ export default {
   head() {
     const meta = this.$getMeta(this.meta, this.currentPagePath, this.$prismic)
     return {
-      meta
+      meta,
     }
-  }
+  },
 }
 </script>
 

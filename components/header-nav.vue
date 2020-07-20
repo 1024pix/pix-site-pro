@@ -55,15 +55,15 @@ export default {
   components: {
     MainNav,
     BurgerMenuNav,
-    OrganizationNav
+    OrganizationNav,
   },
   computed: mapState([
     'organizationNavItems',
     'mainNavItems',
     'topItems',
     'bottomItems',
-    'middleItems'
-  ])
+    'middleItems',
+  ]),
 }
 </script>
 

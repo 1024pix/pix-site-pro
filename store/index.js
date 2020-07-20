@@ -8,7 +8,7 @@ export const state = () => ({
   middleItems: [],
   resourcesNavItems: [],
   aboutNavItems: [],
-  hotNews: null
+  hotNews: null,
 })
 export const actions = {
   async nuxtServerInit({ commit }, { app }) {
@@ -17,7 +17,7 @@ export const actions = {
   },
   async updateNavigation({ commit }, i18n) {
     commit('updateNavigation', await getNavigation(i18n))
-  }
+  },
 }
 export const mutations = {
   updateNavigation(state, navigations) {
@@ -38,7 +38,7 @@ export const mutations = {
   },
   updateHotNews(state, hotNews) {
     state.hotNews = hotNews && hotNews.data ? hotNews.data.description : null
-  }
+  },
 }
 
 function getNavigation(i18n) {

@@ -29,7 +29,7 @@
                   ><img
                     style="max-width: 11px;"
                     alt="facebook"
-                    src="/images/icn-facebook.svg"/></i
+                    src="/images/icn-facebook.svg" /></i
               ></a>
             </li>
             <li class="social-links__item social-link">
@@ -41,7 +41,7 @@
                   ><img
                     style="max-width: 22px;"
                     alt="twitter"
-                    src="/images/icn-twitter.svg"/></i
+                    src="/images/icn-twitter.svg" /></i
               ></a>
             </li>
             <li class="social-links__item social-link">
@@ -53,7 +53,7 @@
                   ><img
                     style="max-width: 23px;"
                     alt="linkedin"
-                    src="/images/icn-linkedin.svg"/></i
+                    src="/images/icn-linkedin.svg" /></i
               ></a>
             </li>
           </ul>
@@ -71,8 +71,8 @@ export default {
   name: 'AppFooter',
   components: {
     AboutNav,
-    ResourcesNav
-  }
+    ResourcesNav,
+  },
 }
 </script>
 

@@ -12,8 +12,8 @@ export default {
     field: {
       required: true,
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     linkComponent() {
@@ -46,7 +46,7 @@ export default {
         `
       }
       return { template }
-    }
-  }
+    },
+  },
 }
 </script>

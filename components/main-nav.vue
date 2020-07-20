@@ -12,7 +12,7 @@
         { 'text-black': index < mainNavItems.length - 1 },
         { 'link-separator-left': index === mainNavItems.length - 3 },
         { 'link-active': isPixProActive(index) },
-        { 'btn-nav': index === mainNavItems.length - 1 }
+        { 'btn-nav': index === mainNavItems.length - 1 },
       ]"
     >
       {{ $prismic.richTextAsPlain(item.primary.title) }}
@@ -26,18 +26,18 @@ export default {
   props: {
     mainNavItems: {
       type: Array,
-      default: null
-    }
+      default: null,
+    },
   },
   methods: {
     isPixProActive(index) {
       return [
         '/employeurs',
         '/mediation-numerique',
-        'continuite-pedagogique-of'
+        'continuite-pedagogique-of',
       ].includes(this.$nuxt.$route.path)
-    }
-  }
+    },
+  },
 }
 </script>
 
