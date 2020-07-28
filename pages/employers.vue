@@ -131,8 +131,8 @@ export default {
   nuxtI18n: {
     paths: {
       'fr-fr': '/employeurs',
-      'en-gb': '/employers'
-    }
+      'en-gb': '/employers',
+    },
   },
   components: { HeroBanner, KeyNumbers, SectionColumnSlice, SectionSlice },
   async asyncData({ app, error, req, currentPagePath }) {
@@ -148,7 +148,7 @@ export default {
         document: document.data.body,
         keyNumbers: keyNumbers.data,
         keyNumbersId: keyNumbers.id,
-        documentId: document.id
+        documentId: document.id,
       }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
@@ -157,9 +157,9 @@ export default {
   head() {
     const meta = this.$getMeta(this.meta, this.currentPagePath, this.$prismic)
     return {
-      meta
+      meta,
     }
-  }
+  },
 }
 </script>
 

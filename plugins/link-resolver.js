@@ -1,6 +1,6 @@
 const defaultLocale = 'fr-fr'
 
-export default function(doc) {
+export default function (doc) {
   const staticRoute = [
     'mediation',
     'employers',
@@ -10,7 +10,7 @@ export default function(doc) {
     'competences',
     'cgu_page',
     'statistiques',
-    'legal-notices'
+    'legal-notices',
   ]
   if (staticRoute.includes(doc.type)) {
     return doc.lang === defaultLocale

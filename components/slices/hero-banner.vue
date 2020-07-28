@@ -17,24 +17,24 @@ export default {
   props: {
     content: {
       type: Object,
-      default: null
+      default: null,
     },
     sectionClass: {
       type: String,
-      default: ''
+      default: '',
     },
     backgroundClass: {
       type: String,
-      default: ''
+      default: '',
     },
     contentClass: {
       type: String,
-      default: ''
+      default: '',
     },
     buttonClass: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   computed: {
     title() {
@@ -51,8 +51,8 @@ export default {
     },
     hasButton() {
       return this.buttonText && this.buttonText.length
-    }
-  }
+    },
+  },
 }
 </script>
 

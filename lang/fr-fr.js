@@ -3,23 +3,23 @@ export default {
   'en-gb': 'English',
   'contact-digital-mediation': {
     'page-title': "Demande d'information",
-    'form-id': '24665'
+    'form-id': '24665',
   },
   'higher-education-establishment-registration': {
     'page-title': 'Demande d’espace Pix Orga',
-    'form-id': '22367'
+    'form-id': '22367',
   },
   'pix-certification-application': {
     'page-title': "Demande d'agrément comme centre de certification Pix",
-    'form-id': '23331'
+    'form-id': '23331',
   },
   'pix-orga-registration': {
     'page-title': "Demande d'information",
-    'form-id': '22370'
+    'form-id': '22370',
   },
   'pix-orga-higher-school-registration': {
     'page-title': "Finalisez votre demande d'espace Pix Orga",
-    'form-id': '22797'
+    'form-id': '22797',
   },
   'news-page-title': 'Actualités',
   'news-page-no-news': "Il n’y a pas encore d'actualités",
@@ -46,5 +46,5 @@ export default {
     '    <p>' +
     '      Si vous avez besoin d’aide, vous pouvez également contacter le support' +
     '      <a href="mailto:contact@pix.fr">icix</a>.' +
-    '    </p>'
+    '    </p>',
 }

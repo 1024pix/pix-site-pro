@@ -79,12 +79,12 @@ export default {
   nuxtI18n: {
     paths: {
       'fr-fr': '/mediation-numerique',
-      'en-gb': '/digital-mediation'
-    }
+      'en-gb': '/digital-mediation',
+    },
   },
   components: {
     SectionSlice,
-    SectionColumnSlice
+    SectionColumnSlice,
   },
   async asyncData({ app, error, req, currentPagePath }) {
     try {
@@ -96,7 +96,7 @@ export default {
         currentPagePath,
         document: document.data.body,
         meta: document.data.meta,
-        documentId: document.id
+        documentId: document.id,
       }
     } catch (e) {
       error({ statusCode: 404, message: 'Page not found' })
@@ -105,9 +105,9 @@ export default {
   head() {
     const meta = this.$getMeta(this.meta, this.currentPagePath, this.$prismic)
     return {
-      meta
+      meta,
     }
-  }
+  },
 }
 </script>
 
